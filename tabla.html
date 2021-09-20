@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet"href="./css/global.css"/>
+    <link rel="stylesheet"href="./css/tabla.css"/>
+    <title>Document</title>
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg  bg-light navbar-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Training Security</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./perfil.html">Cuenta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./guia.html">Guia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sedes.html">Sedes</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+    </nav>
+    
+    <h4 style="text-align: center;">Clases disponibles para la sede envigado</h4>
+    <div class="containerDiv" style="display: flex;justify-content: center;">
+      <table class="table tablaFormulario">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Horarios</th>
+            <th scope="col">Modalidad</th>
+            <th scope="col">Cupos(Max:30)</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody id="tabla">
+          <tr class="table-danger">
+            <th scope="row">1</th>
+            <td id="horario1">5am-6am</td>
+            <td  id="funcion1">Funcional</td>
+            <td class="tdCupoNumero" id="cupo1">29</td>
+            <td><button type="button" class="btn btn-dark" onClick="botonTabla(cupo1,btncupo1,horario1,funcion1);"id="btncupo1">inscribirse</button></td>
+          </tr>
+          <tr class="table-secondary">
+            <th scope="row">2</th>
+            <td id="horario2">6am-7am</td>
+            <td id="funcion2">Funcional</td>
+            <td class="tdCupoNumero" id="cupo2">22</td>
+            <td><button type="button" class="btn btn-dark"  onClick="botonTabla(cupo2,btncupo2,horario2,funcion2);"id="btncupo2">inscribirse</button></td>
+          </tr>
+          <tr class="table-danger">
+            <th scope="row">3</th>
+            <td id="horario3">7am-8am</td>
+            <td id="funcion3">Zumba</td>
+            <td class="tdCupoNumero" id="cupo3">30</td>
+            <td><button type="button" class="btn btn-dark"  onClick="botonTabla(cupo3,btncupo3,horario3,funcion3);"id="btncupo3">clase llena</button></td>
+          </tr>
+          <tr class="table-secondary">
+            <th scope="row">4</th>
+            <td id="horario4">8am-9m</td>
+            <td id="funcion4">Funcional</td>
+            <td class="tdCupoNumero" id="cupo4">17</td>
+            <td><button type="button" class="btn btn-dark"    onClick="botonTabla(cupo4,btncupo4,horario4,funcion4);" id="btncupo4">inscribirse</button></td>
+          </tr>
+          <tr class="table-danger">
+            <th scope="row">5</th>
+            <td id="horario5">9am-10am</td>
+            <td id="funcion5">Funcional</td>
+            <td class="tdCupoNumero" id="cupo5">30</td>
+            <td><button type="button" class="btn btn-dark"  onClick="botonTabla(cupo5,btncupo5,horario5,funcion5);"id="btncupo5">clase llena</button></td>
+          </tr>
+          <tr class="table-secondary">
+            <th scope="row">6</th>
+            <td id="horario6">10am-11am</td>
+            <td id="funcion6">Funcional</td>
+            <td class="tdCupoNumero" id="cupo6">28</td>
+            <td><button type="button" class="btn btn-dark" onClick="botonTabla(cupo6,btncupo6,horario6,funcion6);"id="btncupo6">inscribirse</button></td>
+          </tr>
+        </tbody>
+      </table>
+      
+    </div>
+    <div class="containerBoton">
+      <button type="button" class="btn btn-danger bntTerminar" onClick="MostrarCard()"id="botonTerminarId">Terminar</button>
+
+    </div>
+    <div>
+    </div>
+    <div class="containerFinalCar"id="card">
+      <div class="card mb-3 containerCard" >
+          <div class="col-md-8">
+              <h4 class="card-title">Reserva</h4>
+              <h6>Modalidad:</h6>
+              <p id="modadlidaP"></p> 
+              <h6>Horario: </h6>
+              <p id="horarioP"></p>
+              <p>Por favor llegar 15 minutos antes.</p>
+              <p>Sede envigado</p> 
+          </div>
+      </div>
+    
+
+    </div>
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Training security
+              </h6>
+              <p>
+                Reserva tu sesión de entrenamiento en cada una de 
+                nuestras diferentes sedes y 
+                clases disponibles, 
+                elige un horario de forma rápida y segura
+              </p>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Sedes antiguas
+              </h6>
+              <p>Envigado</p>
+              <p>Belen</p>
+              <p>Laureles</p>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Sedes nuevas
+              </h6>
+              <p>Poblado</p>
+              <p>Estadio</p>
+              <p>Centro</p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Contact
+              </h6>
+              <p><i class="fas fa-home me-3"></i>Av. Los Rosales 122</p>
+              <p><i class="fas fa-envelope me-3"></i>
+                trainigsecurity@hotmail.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i>Tel: 914-422-456</p>
+              <p><i class="fas fa-print me-3"></i>Fax: 914-123-429</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+    </footer>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="./js/tabla.js"></script>
+</body>
+</html>

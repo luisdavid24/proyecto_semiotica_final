@@ -1,0 +1,16 @@
+:root{
+    --colorBlanco: #f8f6f6;
+    --colorGris:#e8e8e7;
+    --colorNegro:#333333;
+    --colorRojoClaro:#b91817;
+    --colorRojoOscuro:#981914;
+    --colorRojoMenu:#fbf5f5;
+}
+h1,h2,h3,h4,h5{
+    color:var(--colorRojoClaro);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--colorBlanco);
+}

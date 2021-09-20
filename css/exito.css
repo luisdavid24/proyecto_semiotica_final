@@ -1,0 +1,33 @@
+h1{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+div.imprimir{
+    width:110px; 
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:49%;
+}
+
+div.guardar{
+    width:120px; 
+    margin: -20px -48px; 
+    position:relative;
+    top:50%; 
+    left:49%;
+}
+
+div.card{
+    width: 200%;
+    margin: 0px auto;
+    right: 10px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 640px;
+
+}

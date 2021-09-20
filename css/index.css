@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+
+.logotipo{
+
+    width: 50px;
+    padding: 10px;
+}
+
+.sps--abv{
+    background-color: transparent;
+    color: #000;
+
+}
+.sps--blw{
+    background-color: transparent;
+    color: #2b2b2b;
+    color: #fff;
+    
+}
+
+
+.iconos-redes-header{
+    width: 30px;
+    margin: 10px 5px;
+}
+
+.imagenesCarousel{
+
+    width: 20px;
+    margin: 50px;
+
+}
+
+
+.banner-video img{
+    width: 80px;
+    height: 80px;
+    position: relative;
+
+
+}
+
+.footer{
+    background-color: black ;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+

@@ -1,0 +1,88 @@
+div.noticia {
+        
+    margin: 20px auto;
+    background-color: #b9b9b9;
+    padding: 15px;
+    
+}
+
+div.noticia img.izquierda {
+    border-radius: 20px;
+    border-color: black;
+    border-style: groove;
+    width: 200px;
+    position:relative;
+    top:50%; 
+    left:40%;
+}
+
+section.text{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+}
+
+p.tituloprincipal {
+    color: rgb(131, 10, 10);
+    margin-top: 10pt;
+    font-size: 20pt;
+}
+
+p.titulo {
+    color: rgb(131, 10, 10);
+    margin-top: 0pt;
+    font-size: 30pt;
+}
+
+p {
+    color: black;
+    margin-top: 0pt;
+    font-size:12pt;
+}
+
+div.guia {
+    margin: 8px auto;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    margin-top: 0px;
+    margin-right: 80px;
+    margin-left: 80px;
+    text-align: center;
+    font-size: 10pt;
+}
+
+img.imginicio{
+    width: 50%;
+}
+
+img.imglogin{
+    width: 40%;
+}
+
+img.imglogin2{
+    width: 36%;
+}
+
+img.imgclase{
+    width: 60%;
+}
+
+img.imgexito{
+    width: 80%;
+}
+
+img.imgrecuperar{
+    width: 70%;
+}
+
+img.cuenta{
+    width: 40%;
+}
+
+img.sedes{
+    width: 40%;
+}
